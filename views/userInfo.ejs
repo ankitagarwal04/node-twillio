@@ -1,0 +1,12 @@
+<% include ./partials/layout %>
+<% include ./partials/nav %>
+
+<div class="center-block">
+	First Name :  <strong><%= user.first_name %></strong>
+	<br>
+	Last Name : <strong><%= user.last_name %></strong>
+	<br>
+	Phone Number: <strong><%= user.phone_number %></strong>
+	<br>
+	<a href="/messages/<%= user.id %>/message" class="btn btn-default">Send Message</a>
+</div>

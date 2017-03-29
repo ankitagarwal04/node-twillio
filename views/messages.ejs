@@ -1,0 +1,34 @@
+	<% include ./partials/layout %>
+	<% include ./partials/nav %>
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-12">
+	<div class="table-responsive">
+	  <table width="100%" class="table table-striped table-bordered table-hover">
+	    <thead>
+	      <tr>
+	      	<th>Sr. No</th>
+	        <th>First Name</th>
+	        <th>Sent At</th>
+	        <th>OTP</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	    <ul>
+		<% for(var i=0; i<messages.length; i++) { %>
+			<tr>
+			<td><%= messages[i].id %></td>
+			<td><%= messages[i].first_name %></td>
+			<td><%= messages[i].date_created %></td>
+			<td>
+				<%= messages[i].otp %>
+			</td>
+			   
+			</tr>
+		<% } %>
+	    </tbody>
+	  </table>
+	</div>
+	</div>
+	</div>
+	</div>

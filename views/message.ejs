@@ -1,0 +1,13 @@
+<% include ./partials/layout %>
+<% include ./partials/nav %>
+
+<div class="message">
+Hello user  <%= user_id %>
+</div>
+<%= message %>
+<% if(show_form) {%>
+<form action="/messages/<%= user_id%>/send_otp" method="post">
+<input type="text" name="message">
+<input type="submit">
+</form>
+<% } %>

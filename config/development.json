@@ -1,0 +1,9 @@
+{
+  "databaseSettings": {
+    "host": "localhost",
+    "user": "root",
+    "password": "root",
+    "database": "kisan_demo"
+  },
+  "PORT":3002
+}
