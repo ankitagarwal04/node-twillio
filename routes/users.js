@@ -21,7 +21,7 @@ router.get("/", function(req, res, next) {
 	}, function(err, result) {
 		if (err) {
 			var msg = err.toString() + "Something with user data";
-			return sendResponse.sendErrorMessage(msg, reply, 500);
+			return sendResponse.sendErrorMessage(msg, res, 500);
 		} else {
 			res.render("users", {
 				users: usersData
